@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <title>Documentation</title>
+      <!-- ////////////////////////////////// -->
+      <!-- //      Start Stylesheets       // -->
+      <!-- ////////////////////////////////// -->
+      <link href="css/reset.css" rel="stylesheet" type="text/css" />
+      <link href="css/style.css" rel="stylesheet" type="text/css" />
+      <!-- ////////////////////////////////// -->
+      <!-- //        Favicon Files         // -->
+      <!-- ////////////////////////////////// -->
+      <link rel="shortcut icon" href="images/favicon.ico"/>
+      <!-- ////////////////////////////////// -->
+      <!-- //      Javascript Files        // -->
+      <!-- ////////////////////////////////// -->
+      <script type="text/javascript" src="js/jquery-1.4.2.js"></script>
+      <script type="text/javascript" src="js/jquery.easing.1.1.js"></script>
+      <script type="text/javascript" src="js/ddaccordion.js"></script>
+      <script type="text/javascript" src="js/faq-functions.js" ></script>
+      <script type="text/javascript" src="js/jquery.coda-slider-2.0.js"></script>
+      <script type="text/javascript">
+         $(document).ready(function(){
+            //Coda Slider for Content Setting
+            $('#content-slider').codaSlider();({
+            });
+            
+            //Tab Jquery
+            $(".tab_content").hide(); 
+            $("ul.tabs li:first").addClass("active").show(); 
+            $(".tab_content:first").show(); 
+            $("ul.tabs li").click(function() {
+                $("ul.tabs li").removeClass("active");
+                $(this).addClass("active"); 
+                $(".tab_content").hide(); 
+                var activeTab = $(this).find("a").attr("href"); 
+                $(activeTab).fadeIn(); 
+                return false;
+            });         
+             });
+      </script>
+   </head>
+   <body>
+      <div id="container">
+         <!-- begin of header -->
+         <div id="table-content-wrapper">
+            <ul id="table-content">
+               <li><a class="xtrig" href="#1" rel="coda-slider-1">Cover</a></li>
+               <li><a class="xtrig" href="#2" rel="coda-slider-1">The Package</a></li>
+               <li><a class="xtrig" href="#3" rel="coda-slider-1">HTML &amp; Site Structure</a></li>
+               <li><a class="xtrig" href="#4" rel="coda-slider-1">Logo &amp; Menu</a></li>
+               <li><a class="xtrig" href="#5" rel="coda-slider-1">Gallery Filter</a></li>
+               <li><a class="xtrig" href="#6" rel="coda-slider-1">How To</a></li>
+               <li class="last"><a class="xtrig" href="#7" rel="coda-slider-1">Sources &amp; Credits</a></li>
+            </ul>
+         </div>
+         <!-- end of header -->        
+         <div class="coda-slider preload" id="content-slider">
+            <!-- BEGIN OF PAGE1 -->            
+            <div class="panel">
+               <div class="panel-wrapper">
+                  <div id="page1">
+                     <div id="logo"><img src="images/logo.png" alt="logo" /></div>
+                     <div id="pre-text">
+                        <h5>Hi Welcome to ZenGarden!</h5>
+                        <h5>yardens is Garden and Landscape HTML Template, it's focused for Garden and Landscape Company. ZenGarden Build using latest technology with clean and modern design. yardens template used Bootstrap for flexibility, and developed with HTML5, CSS3 for modern web standard. You can modified this template, because yardens have 3 Different homepage layout, 3 Header Variations and many feature that can be switcher with your feels and looks.</h5>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- END OF PAGE1 -->
+            <!-- BEGIN OF PAGE2 -->           
+            <div class="panel">
+               <div class="panel-wrapper">
+                  <div id="page2">
+                     <div class="col-1">
+                        <h4>The Package</h4>
+                        <p>This Theme download package contains of 2 folder, the folder is "documentation" and "html". The main file of html file is under folder "html", and here the structure of file from of this theme.</p>
+                        <img src="images/file-structure.jpg" alt="" class="imgborder imgcenter" />                                  
+                        <h4>JS Files</h4>
+                        <ul class="circle-list">
+                           <li>
+                              <div class="left-list">bootstrap.min.js</div>
+                              bootstrap js framework
+                           </li>
+                           <li>
+                              <div class="left-list">config.js</div>
+                              All setting of jquery used for this theme
+                           </li>
+                           <li>
+                              <div class="left-list">contact-form.js</div>
+                              used for contact form
+                           </li>
+                           <li>
+                              <div class="left-list">isotope.pkgd.min.js</div>
+                              used for filterlable on portfolio
+                           </li>
+                           <li>
+                              <div class="left-list">jquery.countTo.js</div>
+                              used for numeric counter
+                           </li>
+                           <li>
+                              <div class="left-list">jquery.easypiechart.js</div>
+                              used for circular bar
+                           </li>
+                           <li>
+                              <div class="left-list">jquery.flexslider-min.js</div>
+                              used for slideshow
+                           </li>
+                           <li>
+                              <div class="left-list">jquery.maps.js</div>
+                              used for google map plugin
+                           </li>
+                           <li>
+                              <div class="left-list">jquery.min.js</div>
+                              jquery framework
+                           </li>
+                           <li>
+                              <div class="left-list">jquery.parallax.js</div>
+                              used for parallax background
+                           </li>
+                           <li>
+                              <div class="left-list">jquery.scrollUp.js</div>
+                              used for scroll to top
+                           </li>
+                           <li>
+                              <div class="left-list">jquery.sscr.js</div>
+                              used for smoth scroll
+                           </li>
+                           <li>
+                              <div class="left-list">jquery.sticky.js</div>
+                              used for sticky menu
+                           </li>
+                           <li>
+                              <div class="left-list">jquery.waypoints.min.js</div>
+                              used for scroll event
+                           </li>
+                           <li>
+                              <div class="left-list">modernizr.min.js</div>
+                              jvascript modernizr framework
+                           </li>
+                           <li>
+                              <div class="left-list">owl.carousel.min.js</div>
+                              used for carousel
+                           </li>
+                           <li>
+                              <div class="left-list">smartmenu.min.js</div>
+                              used for menu
+                           </li>
+                           <li>
+                              <div class="left-list">tether.min.js</div>
+                              javascript tether
+                           </li>
+                        </ul>
+                        <h4>CSS Files</h4>
+                        <ul class="circle-list">
+                           <li>
+                              <div class="left-list">animate.min.css</div>
+                              used for animate on some grid content
+                           </li>
+                           <li>
+                              <div class="left-list">bootstrap.min.css</div>
+                              contain bootstrap css framework
+                           </li>
+                           <li>
+                              <div class="left-list">flexslider.css</div>
+                              contain styling of slider
+                           </li>
+                           <li>
+                              <div class="left-list">font-awesome.min.css</div>
+                              contain font awesome icon stylesheet
+                           </li>
+                           <li>
+                              <div class="left-list">foundstrap.css</div>
+                              contain foundstrap css framework (additional framework)
+                           </li>
+                           <li>
+                              <div class="left-list">iconcrafts.css</div>
+                              contain icon craft stylesheet
+                           </li>
+                           <li>
+                              <div class="left-list">owl-carousel.css</div>
+                              contain owl carousel stylesheet
+                           </li>
+                           <li>
+                              <div class="left-list">responsive.css</div>
+                              contain media queries stylesheet
+                           </li>
+                           <li>
+                              <div class="left-list">smartmenu.min.css</div>
+                              contain smart menu stylesheet
+                           </li>
+                           <li>
+                              <div class="left-list">style.css</div>
+                              contain stylesheet for this theme
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- END OF PAGE2 -->
+            <!-- BEGIN OF PAGE3 -->            
+            <div class="panel">
+               <div class="panel-wrapper">
+                  <div id="page3">
+                     <div class="col-3">
+                        <h4>HTML Structure</h4>
+                        <p>The layout in this theme is very flexible because this use "grid" system, so you can make any configuration of column (please refer the "column.html" for some sample of column). In this case I give example if you use 2 column, which one column is maincontent and one again is sidebar. All of the information within the maincontent area is nested within a div with an class of "col-md-8" and for sidebar is nested within an class of "col-md-4". Navigation menu is within a div with an class of "menu-container". The general template structure is the same throughout the template. Here is the general structure :</p>
+                     </div>
+                     <div class="col-2-2-last">                         
+                        <img src="images/html-structure.jpg" alt="" class="imgborder" />  
+                     </div>
+                     <div class="col-3">
+                        <h4>Site Structure</h4>
+                        <p>The page have five main blocks : header, pagetitle, content, and footer each block consisting of each element  present in it. </p>
+                     </div>
+                     <div class="col-2-2-last">                         
+                        <img src="images/site-structure.jpg" alt="" class="imgborder" />  
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- END OF PAGE3 -->       
+            <!-- BEGIN OF PAGE5 -->            
+            <div class="panel">
+               <div class="panel-wrapper">
+                  <div id="page5">
+                     <div class="col-1">
+                        <h4>Logo</h4>
+                        <p>We must add 3 variant logo, for default logo, sticky logo and for responsive logo, to edit the logo you can simply replace the "logo.png" for header logo file into the img folder, if you intend to use a png file. Default size for header logo is 206 x 40 pixel, I recommend to use 2x the size of a normal size, because it will look good on retina devices</p>
+                        <img src="images/logo-html.jpg" alt="" class="imgborder imgcenter" />                                            
+                        <h4>Menu</h4>
+                        <p>Menu at this theme is use horizontal menu style, and it use "li" to make menu and use "li" under "li" if you want make dropdown menu. If you want make active some menu please use <strong>class="active"</strong> in active menu that you want.</p>
+                        <img src="images/menu-html.jpg" alt="" class="imgborder imgcenter" />  
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- END OF PAGE5 -->
+            <!-- BEGIN OF PAGE6 -->            
+            <div class="panel">
+               <div class="panel-wrapper">
+                  <div id="page6">
+                     <div class="col-1">
+                        <h4>Gallery Filter</h4>
+                        <p>To undestand how gallery filter work, first you must create each category on gallery filter list, on this example I will give name ".maintenance", ".decoration", and ".protection". If you look on HTML file this will like this.</p>
+                        <img src="images/pf-filter.jpg" alt="" class="imgborder imgcenter" />
+                        <p>Now you just need add a class of your "category" on each "li" of your gallery, see the image below</p>
+                        <img src="images/pf-filter2.jpg" alt="" class="imgborder imgcenter" />
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- END OF PAGE6 -->
+            <!-- BEGIN OF PAGE7 -->            
+            <div class="panel">
+               <div class="panel-wrapper">
+                  <div id="page7">
+                     <div class="col-3">
+                        <h4>How to change Map location ?</h4>
+                        <p>At "contact.html" and "index.html" go to bottom on javascript area, you must set "latitude" point and "longitude" point. To know your position coordinates or latitude and longitude please visit : <a href="http://universimmedia.pagesperso-orange.fr/geo/loc.htm">http://universimmedia.pagesperso-orange.fr/geo/loc.htm</a></p>
+                     </div>
+                     <div class="col-2-2-last">
+                        <img src="images/map-sett.jpg" alt="" class="imgborder" />                              
+                        <p> Change latitude and longitude also don't forget change the latitude and longitude for marker icon with your value. </p>
+                     </div>
+                     <div class="divider"></div>
+                     <div class="clear"></div>
+                     <div class="col-3">
+                        <h4>How to setting Contact Form ?</h4>
+                        <p>To setting contact form, please open file "sendmail.php" and change with your email on the line 21.</p>
+                     </div>
+                     <div class="col-2-2-last">
+                        <img src="images/contact-sett.jpg" alt="" class="imgborder" />
+                     </div>
+                     <div class="divider"></div>
+                     <div class="clear"></div>
+                     <div class="col-3">
+                        <h4>How to make a new Favicon ?</h4>
+                        <p>First you must make image on size 32x32 pixel, and save in png format, after that go to this site : <a href="http://tools.dynamicdrive.com/favicon/">http://tools.dynamicdrive.com/favicon/</a> and create your "favicon.ico" there and replace the old "favicon.ico" in image folder with your new favicon.ico</p>
+                     </div>
+                     <div class="col-2-2-last">
+                        <img src="images/favicon-sett.jpg" alt="" class="imgborder" />
+                     </div>
+                     <div class="divider"></div>
+                     <div class="clear"></div>
+                      <div class="col-3">
+                        <h4>How to update</h4>
+                        <h5>from 1.0 to 1.0.1</h5>
+                     </div>
+                     <div class="col-2-2-last">
+                        <p>
+                           replace <strong>style.css and responsive.css</strong> to newest version
+                        </p>
+                        <p>
+                           if you use testimonials, please add <strong>strong</strong> tag inside <strong>cite</strong> to fix mobile portrait responsive, (see testimonials on index.html) <br>
+                           <strong>before :</strong>
+                           <pre>&lt;cite&gt;
+   William Franklin
+   &lt;span&gt;Manager at Adelis&lt;/span&gt;
+&lt;/cite&gt;</pre>
+                           
+                           <strong>after :</strong>
+                           <pre>&lt;cite&gt;
+   &lt;strong&gt;William Franklin&lt;/strong&gt;
+   &lt;span&gt;Manager at Adelis&lt;/span&gt;
+&lt;/cite&gt;</pre>
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- END OF PAGE7 -->     
+            <!-- BEGIN OF PAGE8 -->            
+            <div class="panel">
+               <div class="panel-wrapper">
+                  <div id="page9">
+                     <div class="col-1">
+                        <h4>Sources &amp; Credits</h4>
+                        <p>All image use on this theme are free and from :</p>
+                        <ul class="circle-list">
+                           <li><a href="http://www.stockunlimited.com">http://www.stockunlimited.com</a></li>
+                           <li><a href="http://picjumbo.com">http://picjumbo.com</a></li>
+                           <li><a href="https://pixabay.com">https://pixabay.com</a></li>
+                        </ul>
+                        <p>All icon use on this theme are free and from :</p>
+                        <ul class="circle-list">
+                           <li>Thanks to - <a href="http://fontawesome.io/icons">fontawesome icon</a> for awesome collection icon</li>
+                        </ul>
+                        <p>
+                            And some garden icon from iconcrafts.com <br>
+                            <small>* we have annual plan subscription and already have permission to use iconcraft</small>
+                        </p>
+                        <ul class="circle-list">
+                            <li><a href="https://iconcrafts.com">iconcrafts.com</a></li>
+                        </ul>
+                     </div>
+                     <div class="divider"></div>
+                     <div class="clear"></div>
+                     <div class="col-1">
+                        <p>Once again, thank you so much for purchasing this theme. As I said at the beginning, I'd be glad to help you if you have any questions relating to this theme. No guarantees, but I'll do my best to assist. If you have a more general question relating to the themes on ThemeForest, you might consider visiting the forums and asking your question in the "Item Discussion" section.</p>
+                        <p>Thanks,<br/>Foundstrap Studio</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- END OF PAGE8 -->   
+         </div>
+         <!-- .coda-slider -->       
+         <div class="clear"></div>
+      </div>
+   </body>
+</html>
