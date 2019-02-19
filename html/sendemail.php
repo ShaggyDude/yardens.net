@@ -18,7 +18,7 @@
    ========================================================================== */
 
 	// Enter your mail addres here
-	$mailto   = "scott@romack.net"; 		 
+	$mailto   = "hi@yardens.net"; 		 
 	$name     = ucwords($_POST['name']);
 	$subject  = $_POST['subject']; 				// Enter the subject here.
 	$email    = $_POST['email'];
