@@ -1,6 +1,6 @@
 <?php
 
-/* -------------------------------------------------------------------------- 
+/* --------------------------------------------------------------------------
  *
  * file           : sendmail.php
  * Desc           : Sendmail Contact Form
@@ -16,10 +16,10 @@
 /* ==========================================================================
    Variables you can change
    ========================================================================== */
-   
+
 	// Enter your mail addres here
-	$mailto   = "YOUR@MAIL.COM"; 		 
-	$name     = ucwords($_POST['name']); 
+	$mailto   = "scott@romack.net"; 		 
+	$name     = ucwords($_POST['name']);
 	$subject  = $_POST['subject']; 				// Enter the subject here.
 	$email    = $_POST['email'];
 	$message  = $_POST['message'];
@@ -50,6 +50,6 @@
 
 		$headers = 'From: '.$email."\r\n".'Reply-To: '.$name."\r\n" . 'X-Mailer: PHP/' . phpversion();
 
-		mail($mailto, $subject, $email_message, $headers);  
+		mail($mailto, $subject, $email_message, $headers);
 	}
 ?>
