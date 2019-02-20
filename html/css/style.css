@@ -1,6 +1,6 @@
 /* --------------------------------------------------------------------------
  * Foundstrap     : ZenGarden - Gardening and Landscaping HTML Template
- *  
+ *
  * file           : style.css
  * Version        : 1.0.1
  * Author         : Foundstrap - team
@@ -956,7 +956,12 @@ ul.owl-carousel {
     z-index: 9999999;
 }
 .header-top {
-    background: rgba(0, 0, 0, 0.45);
+    background: rgba(0, 0, 0, 1);
+    opacity: .444;
+    transition: .555s;
+}
+.header-top:hover {
+    opacity: 1;
 }
 .header-main {
     background: rgba(0, 0, 0, 0.25);
@@ -970,8 +975,8 @@ ul.owl-carousel {
     display: inline-block;
     padding: 6px 16px 6px 0;
 }
-.header-info li:last-child { 
-    padding-right: 0; 
+.header-info li:last-child {
+    padding-right: 0;
 }
 .header-info li,
 .header-info a {
@@ -1847,7 +1852,7 @@ ul.owl-carousel {
     margin: 0;
 }
 /* --------------------------------------------------------------------------
-   client carousel 
+   client carousel
    -------------------------------------------------------------------------- */
 
 .client-carousel.no-border img {
@@ -2362,7 +2367,7 @@ ul.owl-carousel {
 .isotope,
 .isotope .isotope-item {
     /* change duration value to whatever you like */
-    
+
     -webkit-transition-duration: 0.8s;
     -moz-transition-duration: 0.8s;
     transition-duration: 0.8s;
