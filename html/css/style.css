@@ -1234,6 +1234,12 @@ ul.owl-carousel {
     margin-left: -4px;
     top: -3px;
 }
+.additional-menu form {
+  line-height: 1rem ;
+}
+.additional-menu button.btn.btn-default.btn-sm {
+    padding: 9px 14px;
+}
 /* search panel */
 
 .search-panel {
