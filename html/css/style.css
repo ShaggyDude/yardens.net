@@ -1278,7 +1278,7 @@ header
   padding: 27px 14px 26px;
 }
 #header .header-main.header-on-sticky {
-  background-color: #fff;
+  background: rgba(255, 255, 255, 0.95);
   position: fixed;
   height: 73px;
   display: block;
