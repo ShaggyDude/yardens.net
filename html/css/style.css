@@ -1460,7 +1460,7 @@ conditional section
 -------------------------------------------------------------------------- */
 /* -- what we do -- */
 
-.what-we-do-container {
+/* .what-we-do-container {
   position: relative;
   overflow: hidden;
 }
@@ -1487,7 +1487,7 @@ conditional section
 .what-we-do-container * {
   position: relative;
   z-index: 5;
-}
+} */
 /* -- cta bottom -- */
 
 .cta-bottom-container {
