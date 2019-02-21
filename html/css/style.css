@@ -964,7 +964,7 @@ header
   opacity: 1;
 }
 .header-main {
-  background: rgba(0, 0, 0, 0.25);
+  background: rgba(155, 155, 22, .3);
 }
 .header-info {
   margin: 0;
