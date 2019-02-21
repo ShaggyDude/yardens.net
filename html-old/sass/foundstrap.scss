@@ -1,0 +1,266 @@
+/* --------------------------------------------------------------------------
+ * Foundstrap     : ZenGarden - Garden and Landscape HTML Template
+ *  
+ * file           : foundstrap.css
+ * Version        : 1.0
+ * Author         : Foundstrap - team
+ * Author URI     : http://foundstrap.com
+ *
+ * Foundstrap Studio. Copyright 2016. All Rights Reserved.
+ * -------------------------------------------------------------------------- */
+
+/* --------------------------------------------------------------------------
+   [table of contents]
+   1. general
+   2. typography
+   3. helpers
+   4. grid
+   -------------------------------------------------------------------------- */
+
+@import "compass";
+@import "functions";
+
+html, body {
+    font-size: 100%;
+}
+
+body {
+    font-size: 16px;
+    line-height: 28px;
+    color: #939393;
+}
+
+img, object,
+embed {
+    max-width: 100%;
+    height: auto;
+}
+
+img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.img-left {
+    float: left;
+    margin: 5px 30px 15px 0;
+}
+
+.img-right {
+    float: right;
+    margin: 5px 0 15px 30px;
+}
+
+.img-fluid {
+    margin-bottom: 15px;
+}
+
+.img-radius {
+    @include border-radius;
+}
+
+.img-circle {
+    @include border-radius(50%); 
+}
+
+.img-shadow {
+    @include box-shadow(0 1px 5px rgba(0, 0, 0, 0.1));
+}
+
+.img-border {
+    border: 1px solid #e1e1e1;
+}
+
+.img-margin {
+    margin-bottom: 30px;
+}
+
+.section {
+    padding: 60px 0;
+    @include clearfix;
+}
+
+.clear {
+    clear: both;
+}
+
+/* typography */
+.text-center { text-align: center }
+.text-left { text-align: left }
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 .67em 0;
+}
+
+h1, .h1 { font-size: 3em; line-height: 1.2; }
+h2, .h2 { font-size: 2.250em; line-height: 1.25; }
+h3, .h3 { font-size: 1.875em; line-height: 1.3; }
+h4, .h4 { font-size: 1.5em; line-height: 1.35; }
+h5, .h5 { font-size: 1.125em; line-height: 1.5; }
+h6, .h6 { font-size: 1em; line-height: 1.6; }
+
+p, hr { margin-bottom: 1.875em; }
+
+p.lead {
+    line-height: 1.6em;
+}
+
+a {
+    color: #41b7d8;
+    text-decoration: none;
+    outline: 0;
+    transition: all .25s ease-in-out;
+    -moz-transition: all .25s ease-in-out;
+    -webkit-transition: all .25s ease-in-out;
+    &:focus,
+    &:hover {
+        text-decoration: none;
+        cursor: pointer;
+        color: #96d7e9;
+    }
+
+    &:hover, &:active, &:focus { 
+        outline: none;
+    }
+}
+
+ul, ol, dl {
+    padding: 0;
+    margin: 0;
+}
+
+ul, ol, dl {
+    margin: 0 0 30px 30px;
+}
+
+ul li ul,
+ul li ol {
+    margin-left: 1.25rem;
+    margin-bottom: 0;  
+}
+
+ul.no-bullet {
+    list-style: none;
+    margin-left: 0;
+}
+
+pre {
+    display: block;
+    padding: 12px 16px 12px 16px;
+    margin: 0 0 20px;
+    font-size: 12px;
+    line-height: 19px;
+    word-break: break-all;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    background-color: #f5f5f5;
+    border: 1px solid #e6e6e6;
+    background: url(../img/pre_bg.gif) repeat 0px -8px;
+    font-family: Consolas, "Andale Mono", Courier, "Courier New", monospace;
+    color: #8c8c8c;
+    border-radius: 4px;
+}
+
+/* helpers */
+.no-padding { padding: 0 !important; }
+.no-padding-top { padding-top: 0 !important; }
+.no-padding-bottom { padding-bottom: 0 !important; }
+.no-padding-left { padding-left: 0 !important; }
+.no-padding-right { padding-right: 0 !important; }
+.no-margin { margin: 0 !important; }
+.no-margin-top { margin-top: 0 !important; }
+.no-margin-bottom { margin-bottom: 0 !important; }
+.no-margin-left { margin-left: 0 !important; }
+.no-margin-right { margin-right: 0 !important; }
+.icon-margin { margin-right: 5px; }
+
+[class^="grid-xs"], 
+[class*="grid-xs"],
+[class^="grid-sm"], 
+[class*="grid-sm"],
+[class^="grid-md"], 
+[class*="grid-md"],
+[class^="grid-lg"], 
+[class*="grid-lg"] {
+    display: block;
+    margin: 0;
+    padding: 0;
+    *zoom: 1;
+
+    &:before, &:after {
+        content: " ";
+        display: table;
+    }
+
+    &:after {
+        clear: both;
+    }
+
+    > ul {
+        display: block;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    > li {
+        display: inline;
+        float: left;
+        height: auto;
+        padding: 0 15px 30px;
+    }
+
+    &.no-wrap {
+        margin: 0 -15px;
+    }
+
+    &.no-gutter > li {
+        padding: 0;
+    }
+}
+
+/* extra small screen - effect from mobile landscape */
+@media (min-width : 480px) {
+    @for $i from 1 through 12 - 1 {
+        .grid-xs-#{$i} > li { width: ( 100 / $i ) * 1% }
+    }
+
+    .no-margin-xs { margin: 0 !important; }
+    .no-padding-xs { padding: 0 !important; }
+}
+
+/* small screen - effect from tablet portrait */
+@media (min-width : 768px) {
+    @for $i from 1 through 12 - 1 {
+        .grid-sm-#{$i} > li { width: ( 100 / $i ) * 1% }
+    }
+
+    .no-margin-sm { margin: 0 !important; }
+    .no-padding-sm { padding: 0 !important; }
+}
+
+/* medium screen - effect from tablet landscape */
+@media (min-width : 992px) {
+    @for $i from 1 through 12 - 1 {
+        .grid-md-#{$i} > li { width: ( 100 / $i ) * 1% }
+    }
+
+    .no-margin-md { margin: 0 !important; }
+    .no-padding-md { padding: 0 !important; }
+}
+
+
+/* large screen - effect from laptop */
+@media (min-width : 1200px) {
+    @for $i from 1 through 12 - 1 {
+        .grid-lg-#{$i} > li { width: ( 100 / $i ) * 1% }
+    }
+
+    .no-margin-lg { margin: 0 !important; }
+    .no-padding-lg { padding: 0 !important; }
+    
+    .container {
+        width: 1170px;
+        max-width: 100%;
+    }
+}
