@@ -957,7 +957,7 @@ header
 }
 .header-top {
   background: rgba(0, 0, 0, 1);
-  opacity: .444;
+  opacity: .777;
   transition: .555s;
 }
 .header-top:hover {
