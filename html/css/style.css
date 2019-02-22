@@ -3499,6 +3499,7 @@ footer
 }
 .footer-logo {
   display: block;
+  width: 100%;
   max-width: 246px;
   margin-left: auto;
 }
