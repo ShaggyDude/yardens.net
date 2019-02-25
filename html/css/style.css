@@ -1545,9 +1545,11 @@ service
   text-transform: uppercase;
 }
 .service-content > i {
-  font-size: 74px;
+  font-size: 50px;
   display: block;
   margin-bottom: 20px;
+  opacity: .8;
+  color: #76bd26;
 }
 .service-content p {
   opacity: 0;
