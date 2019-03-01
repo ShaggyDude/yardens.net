@@ -3456,17 +3456,11 @@ footer
   color: #717173;
   font-size: 13px;
   line-height: 24px;
-  padding-top: 80px;
+  padding: 80px 10px;
 }
 #footer strong,
 #footer a {
   color: #888888;
-}
-#footer .social-icon {
-  font-size: 16px;
-}
-#footer .social-icon li:hover a {
-  color: #fff;
 }
 #footer a:hover {
   color: #87ba45;
