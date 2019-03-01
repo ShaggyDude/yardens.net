@@ -3510,3 +3510,11 @@ footer
 #scrollUp {
   display: none !important;
 }
+
+
+
+.social-icon svg {
+  width: 1rem;
+  height: 1rem;
+  fill: #fff;
+}
